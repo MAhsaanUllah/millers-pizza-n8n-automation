@@ -2,8 +2,8 @@
 > Built by [M Ahsaan Ullah](https://fiverr.com/ahsaanullah001)
 
 ## 🖼️ Project Images
-![Portfolio](Assets/Portfolio.png)
-![Workflow](Assets/workflow%20image.png)
+![Portfolio](Assets/portfolio.png)
+![Workflow](Assets/workflow_image.png)
 
 ## 📌 Overview
 A complete restaurant order automation system built with n8n. It handles the full order lifecycle — from customer order through delivery and feedback — and logs data to Google Sheets.

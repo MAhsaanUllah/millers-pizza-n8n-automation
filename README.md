@@ -60,6 +60,13 @@ KITCHEN & DELIVERY FLOW (Nodes 6-15)
 4. Configure Gmail (or SMTP) credentials for sending emails.
 5. Activate the workflow and test with a sample order.
 
+## 🖼️ Screenshots
+Below are screenshots from the `Assets` folder showing the workflow and portfolio visuals.
+
+![Portfolio](Assets/Portfolio.png)
+
+![Workflow](Assets/workflow%20image.png)
+
 ## 💼 Hire Me
 **Fiverr:** https://fiverr.com/ahsaanullah001
 

@@ -1,0 +1,1706 @@
+{
+  "name": "Miller's Pizza — Full Order System",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## 📋 STEP 1: ORDER FORM\nCustomer fills online form:\n- Name & Email\n- Phone Number\n- Order Items\n- Delivery Address\n- Payment Method",
+        "height": 384,
+        "width": 400,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -624,
+        -192
+      ],
+      "id": "5ff5011c-704f-454a-b4ad-14ee417717a0",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "## 💾 STEP 2: AUTO SAVE\n- Order saved to Google Sheets\n- Timestamp added automatically\n- Status set to **Pending**\n- Full order history maintained",
+        "height": 384,
+        "width": 310,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -208,
+        -192
+      ],
+      "id": "e603358e-9424-4a44-b7e7-10b76ab22a0f",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "# 🍕 MILLER'S PIZZA — ORDER AUTOMATION\n**Built by M Ahsaan Ullah**\nfiverr.com/ahsaanullah001\n\n---\n📋 Order Form → 💾 Auto Save\n→ 📧 Customer Email → 🔔 Kitchen Alert\n→ ✅ Status Update\n\n**Saves 2-3 hours daily | Zero manual work**",
+        "height": 288,
+        "width": 720,
+        "color": "#EEFF00"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -624,
+        -496
+      ],
+      "id": "44d692c9-ff80-4ef4-8e83-ac2e07ae6828",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "content": "## 📧 STEP 3: CUSTOMER CONFIRMATION\n- Instant email to customer\n- Order details included\n- 30-45 min delivery time\n- **Professional branded email**",
+        "height": 480,
+        "width": 320,
+        "color": "#8F530F"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        112,
+        -272
+      ],
+      "id": "7c7f1ff7-bead-434b-a292-ced5eb010936",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "content": "## 🔔 STEP 4: KITCHEN ALERT\n- Instant notification to team\n- Full order details included\n- Customer contact info\n- **Start preparing immediately**",
+        "height": 480,
+        "width": 496,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        448,
+        -272
+      ],
+      "id": "48538cf6-0aa6-44c1-b5db-c7486da7a289",
+      "name": "Sticky Note4"
+    },
+    {
+      "parameters": {
+        "content": "## ✅ STEP 5: STATUS UPDATE\n- Order marked **\"Processing\"**\n- Automatic audit trail\n- Zero manual tracking needed\n- **100% automated** ⚡",
+        "height": 480,
+        "width": 416,
+        "color": "#7F0981"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        976,
+        -272
+      ],
+      "id": "3d926c48-db35-43a8-a759-439d8c04b47d",
+      "name": "Sticky Note5"
+    },
+    {
+      "parameters": {
+        "content": "# 💾 STEP 7: UPDATE PREPARED\n**Matches order by:** Customer Email\n\nUpdates in sheet:\n- Status → **Prepared**\n- Kitchen Staff → Staff name\n- Prepared Time → Auto timestamp\n\n**Zero manual entry required**",
+        "height": 528,
+        "width": 400,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1824,
+        -576
+      ],
+      "id": "de30068b-f14c-4ac6-a0bf-8e537b3c44a0",
+      "name": "Sticky Note6"
+    },
+    {
+      "parameters": {
+        "content": "# 🛵 STEP 9: DELIVERY ALERT\n**Instant email to delivery team**\n\nContains:\n- Customer email\n- Prepared by (staff name)\n- Status confirmation\n\n⚡ **Triggered automatically**\nwhen kitchen marks prepared",
+        "height": 432,
+        "width": 528,
+        "color": "#82420D"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        2944,
+        -640
+      ],
+      "id": "b52b9262-ab26-40bd-990e-bc38703a9770",
+      "name": "Sticky Note7"
+    },
+    {
+      "parameters": {
+        "content": "# STEP 6 🍽️ KITCHEN DASHBOARD\n## Staff Order Management\n\n**Trigger:** Kitchen staff submits form\n**URL:** Separate from customer form\n**Access:** Kitchen team only\n\nFields required:\n- Customer Email (to match order)\n- Kitchen Staff Name\n- Status: Prepared ✅",
+        "height": 512,
+        "width": 368,
+        "color": "#6D7500"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1408,
+        -576
+      ],
+      "id": "2fa1f0c5-0eb9-4c96-afcb-82001c90a988",
+      "name": "Sticky Note8"
+    },
+    {
+      "parameters": {
+        "content": "# ⏰ STEP 11: SMART WAIT\n**Waits 15 minutes after delivery**\n\nWhy?\n- Give customer time to receive order\n- Then ask for feedback at right moment\n- **Not too early, not too late**\n\nFully automated timing ✅",
+        "height": 336,
+        "width": 688,
+        "color": "#816F12"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        2240,
+        -64
+      ],
+      "id": "f855e7a4-b067-4170-838f-d1730ca23228",
+      "name": "Sticky Note9"
+    },
+    {
+      "parameters": {
+        "content": "## ⭐ STEP 12: FEEDBACK EMAIL\nAuto sent after 10 min wait\n\nContains:\n- Personalized message\n- Direct feedback form link\n- Thank you note\n\n**Builds customer loyalty** 🍕",
+        "height": 432,
+        "width": 512
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1472,
+        112
+      ],
+      "id": "b56af711-166e-4d2c-b6ec-89e276ff6ef0",
+      "name": "Sticky Note10"
+    },
+    {
+      "parameters": {
+        "content": "## ✅ STEPS 13 & 14: FINAL UPDATES\n\n**Mark Delivered:**\n- Status → Delivered\n- Delivered Time → Auto timestamp\n- Feedback Sent → Yes\n\n**Save Feedback:**\n- Rating saved to sheet\n- Comments saved to sheet\n- **Complete order audit trail** 📊",
+        "height": 416,
+        "width": 656,
+        "color": 7
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        2192,
+        336
+      ],
+      "id": "a11500e7-7abd-4441-9677-3395d292d5e0",
+      "name": "Sticky Note11"
+    },
+    {
+      "parameters": {
+        "content": "# 🍽️ KITCHEN & DELIVERY WORKFLOW\n**Staff Portal — Miller's Pizza**\n\n---\n🍽️ Kitchen Form → 💾 Update Status\n→ 📊 Get Order → 🛵 Delivery Alert\n→ 🛵 Rider Form → ⏰ Wait 10min\n→ ⭐ Feedback Email → ✅ Mark Delivered\n→ 📝 Save Feedback\n\n**Full lifecycle — Zero manual work**\nBuilt by M Ahsaan Ullah\nfiverr.com/ahsaanullah001\n",
+        "height": 432,
+        "width": 1600,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1312,
+        -1040
+      ],
+      "id": "daa5d868-27af-4b18-9758-f1de3c00b506",
+      "name": "Sticky Note12"
+    },
+    {
+      "parameters": {
+        "formTitle": "Miller's Pizza",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Customer Name"
+            },
+            {
+              "fieldLabel": "Email Address",
+              "fieldType": "email"
+            },
+            {
+              "fieldLabel": "Phone Number",
+              "fieldType": "number"
+            },
+            {
+              "fieldLabel": "Your Order",
+              "fieldType": "textarea"
+            },
+            {
+              "fieldLabel": "Delivery Address",
+              "fieldType": "textarea"
+            },
+            {
+              "fieldLabel": "Payment Method",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Cash on Delivery"
+                  },
+                  {
+                    "option": "Credit Card"
+                  },
+                  {
+                    "option": "Paypal"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.5,
+      "position": [
+        -432,
+        32
+      ],
+      "id": "39ba86b8-3d46-4de7-90a8-1827d70605f2",
+      "name": "1️⃣ Order Form",
+      "webhookId": "331b1ba5-b8a7-40c7-a551-796b3b8ea68b"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "104t3yBox7l2CX2FXKWYJcMF0qUU-_Hmz61LYj3oZpFM",
+          "mode": "list",
+          "cachedResultName": "Miller's Pizza Orders",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/104t3yBox7l2CX2FXKWYJcMF0qUU-_Hmz61LYj3oZpFM/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/104t3yBox7l2CX2FXKWYJcMF0qUU-_Hmz61LYj3oZpFM/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Customer Name": "={{ $json['Customer Name'] }}",
+            "Email": "={{ $json['Email Address'] }}",
+            "Phone": "={{ $json['Phone Number'] }}",
+            "Order": "={{ $json['Your Order'] }}",
+            "Delivery Address": "={{ $json['Delivery Address'] }}",
+            "Payment Method": "={{ $json['Payment Method'] }}",
+            "Status": "Pending",
+            " Feedback Sent  ": "No",
+            "Order Time": "={{ $now.toFormat('MM/dd/yyyy HH:mm:ss') }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Customer Name",
+              "displayName": "Customer Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Phone",
+              "displayName": "Phone",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Order",
+              "displayName": "Order",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Delivery Address",
+              "displayName": "Delivery Address",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Payment Method",
+              "displayName": "Payment Method",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Order Time",
+              "displayName": "Order Time",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Rider Name",
+              "displayName": "Rider Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Rider Phone",
+              "displayName": "Rider Phone",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Prepared Time ",
+              "displayName": "Prepared Time ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Delivered Time ",
+              "displayName": "Delivered Time ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": " Feedback Sent  ",
+              "displayName": " Feedback Sent  ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Comments",
+              "displayName": "Comments",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        -112,
+        16
+      ],
+      "id": "11ae4355-c0f6-4edd-b065-633ef44ca66b",
+      "name": "2️⃣ Save to Sheets",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "heJG9OCNdwMDuP6s",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $('1️⃣ Order Form').item.json['Email Address'] }}",
+        "subject": "🍕 Order Confirmed — Miller's Pizza!",
+        "emailType": "text",
+        "message": "=Hi {{ $('1️⃣ Order Form').item.json['Customer Name'] }},\n\nYour order has been confirmed! 🎉\n\n━━━━━━━━━━━━━━━━━━━━━━\nORDER DETAILS\n━━━━━━━━━━━━━━━━━━━━━━\n🍕 Items:   {{ $('1️⃣ Order Form').item.json['Your Order'] }}\n📍 Address: {{ $('1️⃣ Order Form').item.json['Delivery Address'] }}\n💳 Payment: {{ $('1️⃣ Order Form').item.json['Payment Method'] }}\n⏰ Delivery: 30-45 minutes\n\n━━━━━━━━━━━━━━━━━━━━━━\n\nWe'll start preparing right away! 👨‍🍳\n\nThank you for choosing Miller's Pizza!\n\n— Miller's Pizza Team\n🍕 millers-pizza.com",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        208,
+        32
+      ],
+      "id": "32cdd9fc-0590-413e-96f0-64881ddde086",
+      "name": "3️⃣ Customer Email",
+      "webhookId": "8f364fbd-4b07-4896-9edd-cd74cd01d366",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "bO9IPV0zc7nLCZlh",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "dev.ahsaan@gmail.com",
+        "subject": "=🔔 New Order — {{ $('1️⃣ Order Form').item.json['Customer Name'] }}\n",
+        "emailType": "text",
+        "message": "=NEW ORDER RECEIVED! 🍕\n\n━━━━━━━━━━━━━━━━━━━━━━\nCUSTOMER INFO\n━━━━━━━━━━━━━━━━━━━━━━\n👤 Name:    {{ $('1️⃣ Order Form').item.json['Customer Name'] }}\n📧 Email:   {{ $('1️⃣ Order Form').item.json['Email Address'] }}\n📞 Phone:   {{ $('1️⃣ Order Form').item.json['Phone Number'] }}\n\n━━━━━━━━━━━━━━━━━━━━━━\nORDER DETAILS\n━━━━━━━━━━━━━━━━━━━━━━\n🍕 Items:   {{ $('1️⃣ Order Form').item.json['Your Order'] }}\n📍 Address: {{ $('1️⃣ Order Form').item.json['Delivery Address'] }}\n💳 Payment: {{ $('1️⃣ Order Form').item.json['Payment Method'] }}\n🕐 Time:    {{ $now.toFormat('MM/dd/yyyy HH:mm:ss') }}\n\n━━━━━━━━━━━━━━━━━━━━━━\n\n⚡ START PREPARING IMMEDIATELY!\n\n— Miller's Pizza Automated System",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        624,
+        32
+      ],
+      "id": "f8d53d23-8c08-40d0-b2ee-dc1c451c9a6e",
+      "name": "4️⃣ Kitchen Alert",
+      "webhookId": "686b8efd-032f-41d2-bc4a-49a24e0b8b71",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "bO9IPV0zc7nLCZlh",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "104t3yBox7l2CX2FXKWYJcMF0qUU-_Hmz61LYj3oZpFM",
+          "mode": "list",
+          "cachedResultName": "Miller's Pizza Orders",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/104t3yBox7l2CX2FXKWYJcMF0qUU-_Hmz61LYj3oZpFM/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/104t3yBox7l2CX2FXKWYJcMF0qUU-_Hmz61LYj3oZpFM/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Status": "Processing",
+            "Email": "={{ $('1️⃣ Order Form').item.json['Email Address'] }}"
+          },
+          "matchingColumns": [
+            "Email"
+          ],
+          "schema": [
+            {
+              "id": "Customer Name",
+              "displayName": "Customer Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Phone",
+              "displayName": "Phone",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Order",
+              "displayName": "Order",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Delivery Address",
+              "displayName": "Delivery Address",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Payment Method",
+              "displayName": "Payment Method",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Order Time",
+              "displayName": "Order Time",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Rider Name",
+              "displayName": "Rider Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Rider Phone",
+              "displayName": "Rider Phone",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Prepared Time ",
+              "displayName": "Prepared Time ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Delivered Time ",
+              "displayName": "Delivered Time ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": " Feedback Sent  ",
+              "displayName": " Feedback Sent  ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Comments",
+              "displayName": "Comments",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1152,
+        -16
+      ],
+      "id": "8db3263a-0667-459e-a0b2-f05d12eb5fcb",
+      "name": "5️⃣ Status Update",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "heJG9OCNdwMDuP6s",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "formTitle": "🍕 Miller's Pizza — Kitchen Dashboard",
+        "formDescription": "Kitchen staff — update order status here",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Customer Email",
+              "fieldType": "email"
+            },
+            {
+              "fieldLabel": "Rider Name"
+            },
+            {
+              "fieldLabel": "Rider Phone",
+              "fieldType": "number"
+            },
+            {
+              "fieldLabel": "Status Update",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Prepared"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.5,
+      "position": [
+        1568,
+        -208
+      ],
+      "id": "f213912c-3526-4d2c-b0b9-2b98beb3ec9d",
+      "name": "6️⃣ Kitchen Form",
+      "webhookId": "ca6f354a-3f53-4eab-b8d9-e4638fd9a515"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "104t3yBox7l2CX2FXKWYJcMF0qUU-_Hmz61LYj3oZpFM",
+          "mode": "list",
+          "cachedResultName": "Miller's Pizza Orders",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/104t3yBox7l2CX2FXKWYJcMF0qUU-_Hmz61LYj3oZpFM/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/104t3yBox7l2CX2FXKWYJcMF0qUU-_Hmz61LYj3oZpFM/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Email": "={{ $json['Customer Email'] }}",
+            "Status": "={{ $json['Status Update'] }}",
+            "Prepared Time ": "={{ $now.toFormat('MM/dd/yyyy HH:mm:ss') }}",
+            "Rider Name": "={{ $('6️⃣ Kitchen Form').item.json['Rider Name'] }}",
+            "Rider Phone": "={{ $('6️⃣ Kitchen Form').item.json['Rider Phone'] }}"
+          },
+          "matchingColumns": [
+            "Email"
+          ],
+          "schema": [
+            {
+              "id": "Customer Name",
+              "displayName": "Customer Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Phone",
+              "displayName": "Phone",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Order",
+              "displayName": "Order",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Delivery Address",
+              "displayName": "Delivery Address",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Payment Method",
+              "displayName": "Payment Method",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Order Time",
+              "displayName": "Order Time",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Rider Name",
+              "displayName": "Rider Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Rider Phone",
+              "displayName": "Rider Phone",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Prepared Time ",
+              "displayName": "Prepared Time ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Delivered Time ",
+              "displayName": "Delivered Time ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": " Feedback Sent  ",
+              "displayName": " Feedback Sent  ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Comments",
+              "displayName": "Comments",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        2080,
+        -240
+      ],
+      "id": "2635ff88-cf95-4abf-a040-cad429264889",
+      "name": "7️⃣ Update Prepared",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "heJG9OCNdwMDuP6s",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "104t3yBox7l2CX2FXKWYJcMF0qUU-_Hmz61LYj3oZpFM",
+          "mode": "list",
+          "cachedResultName": "Miller's Pizza Orders",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/104t3yBox7l2CX2FXKWYJcMF0qUU-_Hmz61LYj3oZpFM/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/104t3yBox7l2CX2FXKWYJcMF0qUU-_Hmz61LYj3oZpFM/edit#gid=0"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "Email",
+              "lookupValue": "={{ $('6️⃣ Kitchen Form').item.json['Customer Email'] }}"
+            },
+            {
+              "lookupColumn": "Status",
+              "lookupValue": "Prepared"
+            }
+          ]
+        },
+        "options": {
+          "returnFirstMatch": true
+        }
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        2624,
+        -304
+      ],
+      "id": "5ba861aa-8c51-46c4-8efc-319303366007",
+      "name": "8️⃣ Get Order Details",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "heJG9OCNdwMDuP6s",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "mughalahsaan99@gmail.com",
+        "subject": "=🛵 Order Pickup — {{ $('8️⃣ Get Order Details').item.json['Customer Name'] }}\n\n\n",
+        "emailType": "text",
+        "message": "=ORDER READY FOR PICKUP! 🛵\n\n━━━━━━━━━━━━━━━━━━━━━━\nCUSTOMER DETAILS\n━━━━━━━━━━━━━━━━━━━━━━\n👤 Name:    {{ $('8️⃣ Get Order Details').item.json['Customer Name'] }}\n📞 Phone:   {{ $('8️⃣ Get Order Details').item.json['Phone'] }}\n📍 Address: {{ $('8️⃣ Get Order Details').item.json['Delivery Address'] }}\n🍕 Order:   {{ $('8️⃣ Get Order Details').item.json['Order'] }}\n💳 Payment: {{ $('8️⃣ Get Order Details').item.json['Payment Method'] }}\n\n━━━━━━━━━━━━━━━━━━━━━━\nRIDER INFO\n━━━━━━━━━━━━━━━━━━━━━━\n🛵 Rider: {{ $('6️⃣ Kitchen Form').item.json['Rider Name'] }}\n📞 Phone: {{ $('6️⃣ Kitchen Form').item.json['Rider Phone'] }}\n━━━━━━━━━━━━━━━━━━━━━━\n\n⚡ Pick up IMMEDIATELY!\nDeliver to address above!\n\n— Miller's Pizza System",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        3248,
+        -384
+      ],
+      "id": "ed173b68-1dcb-402a-a0b8-ee3d6adb347d",
+      "name": "9️⃣ Delivery Alert",
+      "webhookId": "ad0835a9-5ef7-4966-bf35-0c185d4c4fcd",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "bO9IPV0zc7nLCZlh",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "formTitle": "🛵 Miller's Pizza — Order Delivered",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Customer Email",
+              "fieldType": "email"
+            },
+            {
+              "fieldLabel": "Rider Name"
+            },
+            {
+              "fieldLabel": "Delivery Status",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Delivered"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.5,
+      "position": [
+        3376,
+        -128
+      ],
+      "id": "59a3a601-5dcb-4788-ba26-28188bafb7ec",
+      "name": "🔟 Rider Form",
+      "webhookId": "f64fa90f-9b11-4cd4-bb1d-8022da285205"
+    },
+    {
+      "parameters": {
+        "amount": 1,
+        "unit": "minutes"
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        2704,
+        64
+      ],
+      "id": "6933d5d1-5960-488f-ba45-9cd3eac50fa3",
+      "name": "1️⃣1️⃣ Wait 10 Min",
+      "webhookId": "96f09634-cd9a-4228-9ef9-6ce0a0d7142a"
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $('🔟 Rider Form').item.json['Customer Email'] }}\n",
+        "subject": "⭐ How was your Miller's Pizza? Rate us!",
+        "emailType": "text",
+        "message": "=Hi {{ $('🔟 Rider Form').item.json['Customer Email'] }},\n\nYour order has been delivered! 🍕\n\n━━━━━━━━━━━━━━━━━━━━━━\nHOW WAS YOUR EXPERIENCE?\n━━━━━━━━━━━━━━━━━━━━━━\n\nPlease take 30 seconds to rate us:\n\n👉 http://localhost:5678/form-test/c938e4b3-20a7-48fe-b44a-e5a9e798cca4\n\n━━━━━━━━━━━━━━━━━━━━━━\n\nYour feedback helps us serve\nyou better!\n\nThank you for choosing\nMiller's Pizza! 🍕\n\n— Miller's Pizza Team\nmillers-pizza.com",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        1808,
+        384
+      ],
+      "id": "b49f0656-52a0-4ba9-81da-242835c79dfd",
+      "name": "1️⃣2️⃣ Feedback Email",
+      "webhookId": "dfeacdc2-8a4d-4824-8f10-da4d9e9c7a3e",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "bO9IPV0zc7nLCZlh",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "104t3yBox7l2CX2FXKWYJcMF0qUU-_Hmz61LYj3oZpFM",
+          "mode": "list",
+          "cachedResultName": "Miller's Pizza Orders",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/104t3yBox7l2CX2FXKWYJcMF0qUU-_Hmz61LYj3oZpFM/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/104t3yBox7l2CX2FXKWYJcMF0qUU-_Hmz61LYj3oZpFM/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Email": "={{ $('🔟 Rider Form').item.json['Customer Email'] }}",
+            "Delivered Time ": "={{ $now.toFormat('MM/dd/yyyy HH:mm:ss') }}",
+            " Feedback Sent  ": "Yes",
+            "Status": "Delivered"
+          },
+          "matchingColumns": [
+            "Email"
+          ],
+          "schema": [
+            {
+              "id": "Customer Name",
+              "displayName": "Customer Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Phone",
+              "displayName": "Phone",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Order",
+              "displayName": "Order",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Delivery Address",
+              "displayName": "Delivery Address",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Payment Method",
+              "displayName": "Payment Method",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Order Time",
+              "displayName": "Order Time",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Rider Name",
+              "displayName": "Rider Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Rider Phone",
+              "displayName": "Rider Phone",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Prepared Time ",
+              "displayName": "Prepared Time ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Delivered Time ",
+              "displayName": "Delivered Time ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": " Feedback Sent  ",
+              "displayName": " Feedback Sent  ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Comments",
+              "displayName": "Comments",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        2352,
+        592
+      ],
+      "id": "5ef49a12-d45d-44cf-b77c-78ae7b1a4832",
+      "name": "1️⃣3️⃣ Mark Delivered",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "heJG9OCNdwMDuP6s",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "formTitle": "⭐ Miller's Pizza — Rate Your Experience",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Your Email",
+              "fieldType": "email"
+            },
+            {
+              "fieldLabel": "Rate Your Experience",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "⭐ 1 - Poor"
+                  },
+                  {
+                    "option": "⭐⭐ 2 - Fair"
+                  },
+                  {
+                    "option": " ⭐⭐⭐ 3 - Good"
+                  },
+                  {
+                    "option": " ⭐⭐⭐⭐ 4 - Very Good"
+                  },
+                  {
+                    "option": "⭐⭐⭐⭐⭐ 5 - Excellent"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "Any Comments?",
+              "fieldType": "textarea"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.5,
+      "position": [
+        3184,
+        576
+      ],
+      "id": "3427ff9b-67d9-490b-be0f-821f75c612dc",
+      "name": "1️⃣5️⃣ Feedback Form",
+      "webhookId": "c938e4b3-20a7-48fe-b44a-e5a9e798cca4"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "104t3yBox7l2CX2FXKWYJcMF0qUU-_Hmz61LYj3oZpFM",
+          "mode": "list",
+          "cachedResultName": "Miller's Pizza Orders",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/104t3yBox7l2CX2FXKWYJcMF0qUU-_Hmz61LYj3oZpFM/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/104t3yBox7l2CX2FXKWYJcMF0qUU-_Hmz61LYj3oZpFM/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Email": "={{ $json['Your Email'] }}\n",
+            " Feedback Sent  ": "={{ $json['Rate Your Experience'] }}",
+            "Comments": "={{ $json['Any Comments?'] }}"
+          },
+          "matchingColumns": [
+            "Email"
+          ],
+          "schema": [
+            {
+              "id": "Customer Name",
+              "displayName": "Customer Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Phone",
+              "displayName": "Phone",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Order",
+              "displayName": "Order",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Delivery Address",
+              "displayName": "Delivery Address",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Payment Method",
+              "displayName": "Payment Method",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Order Time",
+              "displayName": "Order Time",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Rider Name",
+              "displayName": "Rider Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Rider Phone",
+              "displayName": "Rider Phone",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Prepared Time ",
+              "displayName": "Prepared Time ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Delivered Time ",
+              "displayName": "Delivered Time ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": " Feedback Sent  ",
+              "displayName": " Feedback Sent  ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Comments",
+              "displayName": "Comments",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        2560,
+        592
+      ],
+      "id": "a177f46d-059b-45e3-b9ac-e5731008a577",
+      "name": "1️⃣4️⃣ Save Feedback",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "heJG9OCNdwMDuP6s",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "## 🛵 STEP 10: RIDER FORM\nRider confirms delivery completion\n\nFields:\n- Customer Email\n- Rider Name\n- Delivery Status: Delivered\n\n**Triggers feedback flow automatically**",
+        "height": 416,
+        "width": 560,
+        "color": "#C11F76"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        2960,
+        -176
+      ],
+      "id": "5d776fe9-0305-4bca-b2c3-94c76b696a6d",
+      "name": "Sticky Note13"
+    },
+    {
+      "parameters": {
+        "content": "### 📊 STEP 8: GET ORDER DATA\nFetches complete order from sheet\n\n- Matches by Customer Email\n- Gets Name, Phone, Address\n- Gets Order & Payment details\n- **Returns full customer record**",
+        "height": 464,
+        "width": 512,
+        "color": "#157030"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        2304,
+        -560
+      ],
+      "id": "e4e4a498-b80c-4fc7-9ec7-94315e46c0ed",
+      "name": "Sticky Note14"
+    },
+    {
+      "parameters": {
+        "content": "## ⭐ STEP 15: FEEDBACK FORM\nCustomer rates their experience\n\nFields:\n- Email\n- Rating (1-5 ⭐)\n- Comments\n\n**Data saved directly to sheet**\nZero manual collection needed",
+        "height": 416,
+        "width": 496,
+        "color": "#940EAF"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        2896,
+        336
+      ],
+      "id": "ccdb5a60-f813-4aed-8a76-a88b4cd3cb6d",
+      "name": "Sticky Note15"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "1️⃣ Order Form": {
+      "main": [
+        [
+          {
+            "node": "2️⃣ Save to Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2️⃣ Save to Sheets": {
+      "main": [
+        [
+          {
+            "node": "3️⃣ Customer Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3️⃣ Customer Email": {
+      "main": [
+        [
+          {
+            "node": "4️⃣ Kitchen Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4️⃣ Kitchen Alert": {
+      "main": [
+        [
+          {
+            "node": "5️⃣ Status Update",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "5️⃣ Status Update": {
+      "main": [
+        []
+      ]
+    },
+    "6️⃣ Kitchen Form": {
+      "main": [
+        [
+          {
+            "node": "7️⃣ Update Prepared",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "7️⃣ Update Prepared": {
+      "main": [
+        [
+          {
+            "node": "8️⃣ Get Order Details",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "8️⃣ Get Order Details": {
+      "main": [
+        [
+          {
+            "node": "9️⃣ Delivery Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "9️⃣ Delivery Alert": {
+      "main": [
+        []
+      ]
+    },
+    "🔟 Rider Form": {
+      "main": [
+        [
+          {
+            "node": "1️⃣1️⃣ Wait 10 Min",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1️⃣1️⃣ Wait 10 Min": {
+      "main": [
+        [
+          {
+            "node": "1️⃣2️⃣ Feedback Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1️⃣2️⃣ Feedback Email": {
+      "main": [
+        [
+          {
+            "node": "1️⃣3️⃣ Mark Delivered",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1️⃣3️⃣ Mark Delivered": {
+      "main": [
+        [
+          {
+            "node": "1️⃣4️⃣ Save Feedback",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "7ada66dd-83b2-4147-8838-efba0b0b4406",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "11a2db7e85fa0de8e0a5e90bc680a4745b8681cdcf8d98a5eb9cb41c19020294"
+  },
+  "id": "NKdzhoxNOV5ecjFp",
+  "tags": []
+}

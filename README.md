@@ -1,10 +1,12 @@
 # 🍕 Miller's Pizza — Full Order Automation
 > Built by [M Ahsaan Ullah](https://fiverr.com/ahsaanullah001)
 
+## 🖼️ Project Images
+![Portfolio](Assets/Portfolio.png)
+![Workflow](Assets/workflow%20image.png)
+
 ## 📌 Overview
-Complete restaurant order automation system 
-built with n8n. Handles full order lifecycle 
-from customer order to delivery feedback.
+A complete restaurant order automation system built with n8n. It handles the full order lifecycle — from customer order through delivery and feedback — and logs data to Google Sheets.
 
 ## ⚡ What This Does
 - Customer submits order form
@@ -59,14 +61,6 @@ KITCHEN & DELIVERY FLOW (Nodes 6-15)
 3. Configure Google Sheets credentials and set the target spreadsheet.
 4. Configure Gmail (or SMTP) credentials for sending emails.
 5. Activate the workflow and test with a sample order.
-
-## 🖼️ Screenshots
-Below are screenshots from the `Assets` folder showing the workflow and portfolio visuals.
-
-![Portfolio](Assets/Portfolio.png)
-
-![Workflow](Assets/workflow%20image.png)
-
 ## 💼 Hire Me
 **Fiverr:** https://fiverr.com/ahsaanullah001
 
